@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOOKS COLLECTION</title>
+    <link rel="icon" href="./assets/books.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Salsa&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Salsa&family=Sevillana&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Salsa&family=Sevillana&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+  </head>
+
+  <body class="body1">
+    <header class="heading">
+      <p><img src="./assets/books (1) (1).png">COLLECTION OF BOOKS<img src="./assets/wall-shelves (1).png"></p>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <!-- Column with a width that adjusts based on screen size (large screens and above) -->
+          <div class="col-lg-3">
+            <!-- Container for the content, possibly for styling or functionality -->
+            <div class="area">
+              <img
+                src="./assets/images.jpeg"
+                alt="The Alchemist"
+                style="width: 100%"
+              />
+              <!-- Button that triggers a Bootstrap modal with ID "bookModal" -->
+              <button
+                type="button"
+                class="btn1"
+                data-bs-toggle="modal"
+                data-bs-target="#bookModal"
+              >
+                <b>THE ALCHEMIST</b>
+              </button>
+            </div>
+          </div>
+          <!-- Bootstrap modal structure with ID "bookModal" -->
+          <div
+            class="modal fade"
+            id="bookModal"
+            tabindex="-1"
+            aria-labelledby="bookModalLabel"
+            aria-hidden="true"
+          >
+          <!-- Centered modal dialog -->
+           <div class="modal-dialog modal-dialog-centered">
+              <!-- Modal content container -->
+              <div class="modal-content">
+                <!-- Modal header section -->
+                <div class="modal-header">
+                  <!-- Modal title with ID "bookModalLabel" -->
+                  <h5 class="modal-title" id="bookModalLabel">THE ALCHEMIST</h5>
+                  <!-- Close button for the modal -->
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p class="lead">
+                    Combining magic, mysticism, wisdom, and wonder into an
+                    inspiring tale of self-discovery, The Alchemist has become a
+                    modern classic, selling millions of copies around the world
+                    and transforming the lives of countless readers across
+                    generations. Paulo Coelho's masterpiece tells the mystical
+                    story of Santiago, an Andalusian shepherd boy who yearns to
+                    travel in search of a worldly treasure. His quest will lead
+                    him to riches far different—and far more satisfying—than he
+                    ever imagined. Santiago's journey teaches us about the
+                    essential wisdom of listening to our hearts, recognizing
+                    opportunity and learning to read the omens strewn along
+                    life's path, and, most importantly, following our dreams.
+                  </p>
+                  <a
+                    class="btn btn-primary btn-lg"
+                    href="https://www.amazon.in/Alchemist-Paulo-Coelho/dp/8172234988"
+                    role="button"
+                    >BUY ME</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="area1">
+              <img
+                src="./assets/17+The+Room+on+the+Roof.jpg"
+                alt="Room on the Roof"
+                style="width: 100%"
+              />
+              <button
+                type="button"
+                class="btn1"
+                onclick="popupFunction_one(bookModal_one);"
+              >
+                <b>ROOM ON THE ROOF</b>
+              </button>
+            </div>
+
+            <div
+              class="modal fade"
+              id="bookModal_one"
+              tabindex="-1"
+              aria-labelledby="bookModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="bookModalLabel2">
+                      ROOM ON THE ROOF
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="lead">
+                      "The Room on the Roof" revolves around Rusty, a
+                      16-year-old Anglo-Indian boy who feels alienated from his
+                      strict guardian and the conformist society in Dehradun.
+                      Seeking freedom and a sense of identity, Rusty befriends a
+                      group of Indian friends, including the charismatic Somi
+                      and Meena. Together, they embark on adventures,
+                      experiencing the cultural richness of India. Rusty finds
+                      solace and joy in these friendships, which challenge
+                      societal norms. The novel explores themes of rebellion,
+                      cultural clash, and the quest for personal freedom.
+                      Rusty's journey becomes a poignant exploration of
+                      self-discovery and the transformative power of genuine
+                      connections, making "The Room on the Roof" a timeless tale
+                      of adolescence and the search for one's place in the
+                      world.
+                    </p>
+                    <a
+                      class="btn btn-primary btn-lg"
+                      href="https://www.amazon.in/Room-Roof-Ruskin-Bond/dp/0143333380/ref=sr_1_1?crid=1QI60L22E11QJ&keywords=the+room+on+the+roof+ruskin+bond&qid=1706181740&s=books&sprefix=room+on+the+%2Cstripbooks%2C256&sr=1-1"
+                      role="button"
+                      >BUY ME</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="area2">
+              <img
+                src="./assets/15821365.jpg"
+                alt="Maharani"
+                style="width: 100%"
+              />
+              <button
+                type="button"
+                class="btn1"
+                onclick="popupFunction_two(bookModal_two);"
+              >
+                <b>MAHARANI</b>
+              </button>
+            </div>
+
+            <div
+              class="modal fade"
+              id="bookModal_two"
+              tabindex="-1"
+              aria-labelledby="bookModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="bookModalLabel3">MAHARANI</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="lead">
+                      "Maharani" by Ruskin Bond is a novella that follows the
+                      life of an eccentric and spirited Maharani in a small
+                      Indian principality. The story unfolds through the eyes of
+                      the young and observant narrator, as he becomes enamored
+                      with the Maharani's unconventional behavior and her
+                      ability to connect with nature and animals. The narrative
+                      beautifully captures the Maharani's idiosyncrasies and her
+                      impact on those around her. Filled with Ruskin Bond's
+                      signature charm, "Maharani" is a brief yet enchanting tale
+                      that explores the essence of individuality and the magic
+                      that can be found in the most unexpected places.
+                    </p>
+                    <a
+                      class="btn btn-primary btn-lg"
+                      href="https://www.amazon.in/Maharani-Ruskin-Bond/dp/0143420666/ref=sr_1_1?crid=1FOTJQLMK70KQ&keywords=maharani+ruskin+bond&qid=1706181782&s=books&sprefix=maharani+ruskin%2Cstripbooks%2C246&sr=1-1"
+                      role="button"
+                      >BUY ME</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="area3">
+              <img
+                src="./assets/download (2).jpeg"
+                alt="Grievers"
+                style="width: 100%"
+              />
+              <button
+                type="button"
+                class="btn1"
+                onclick="popupFunction_three(bookModal_three);"
+              >
+                <b>GRIEVERS</b>
+              </button>
+            </div>
+
+            <div
+              class="modal fade"
+              id="bookModal_three"
+              tabindex="-1"
+              aria-labelledby="bookModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="bookModalLabel2">GRIEVERS</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="lead">
+                      Grievers is the story of a city so plagued by grief that
+                      it can no longer function. Dune’s mother is patient zero
+                      of a mysterious illness that stops people in their
+                      tracks—in mid-sentence, mid-action, mid-life—casting them
+                      into a nonresponsive state from which no one recovers.
+                      Dune must navigate poverty and the loss of her mother as
+                      Detroit’s hospitals, morgues, and graveyards begin to
+                      overflow. As the quarantined city slowly empties of life,
+                      she investigates what caused the plague, and what might
+                      end it. In anguish, she follows in the footsteps of her
+                      late researcher father, who has a physical model of
+                      Detroit’s history and losses set up in their basement. She
+                      dusts the model off and begins tracking the sick and
+                      dying, discovering patterns, finding comrades in
+                      curiosity, conspiracies for the fertile ground of the
+                      city, and the unexpected magic that emerges when the debt
+                      of grief is cleared.
+                    </p>
+                    <a
+                      class="btn btn-primary btn-lg"
+                      href="https://www.amazon.in/Grievers-Black-adrienne-maree-brown-ebook/dp/B09JCPRB1N/ref=sr_1_1?crid=DKDZ1JTFNLUF&keywords=GRIEVERS&qid=1706181812&s=books&sprefix=maharani+ruskin+bond%2Cstripbooks%2C390&sr=1-1"
+                      role="button"
+                      >BUY ME</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="area4">
+              <img
+                src="./assets/81-uk11jXuS._AC_UF1000,1000_QL80_.jpg"
+                alt="Insignificance"
+                style="width: 100%"
+              />
+              <button
+                type="button"
+                class="btn1"
+                onclick="popupFunction_four(bookModal_four);"
+              >
+                <b>INSIGNIFICANCE</b>
+              </button>
+            </div>
+
+            <div
+              class="modal fade"
+              id="bookModal_four"
+              tabindex="-1"
+              aria-labelledby="bookModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="bookModalLabel4">
+                      INSIGNIFICANCE
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="lead">
+                      Insignificance, James Clammer’s first novel for adults,
+                      unfurls over the course of a single day. Placing the
+                      reader right inside the head of its struggling narrator,
+                      it works double time, both as an act of empathy - a taste
+                      of the uncertainty and awkwardness of one vulnerable man,
+                      and his relationship with the world - and also as a tense,
+                      emotional and gripping drama. Exploring the burdens of
+                      mental health as well as family life, as well as a
+                      particular illness called Capgras Syndrome (a condition in
+                      which someone comes to believe that a person close to them
+                      has been replaced by an imposter) - Insignificance is a
+                      deeply human story, a novel that portrays the thoughts of
+                      one working man on his own terms, without artifice or
+                      condescension… and a novel that takes us ever closer to
+                      the edge.
+                    </p>
+                    <a
+                      class="btn btn-primary btn-lg"
+                      href="https://www.amazon.in/Insignificance-James-Clammer-ebook/dp/B096147LMC/ref=sr_1_1?crid=17XMO0JV2L873&keywords=insignificance+james+claimer&qid=1706181959&s=books&sprefix=insignificance+james+claimme%2Cstripbooks%2C240&sr=1-1"
+                      role="button"
+                      >BUY ME</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="area5">
+              <img
+                src="./assets/images.png"
+                alt="Constance"
+                style="width: 100%"
+              />
+              <button
+                type="button"
+                class="btn1"
+                onclick="popupFunction_five(bookModal_five);"
+              >
+                <b>CONSTANCE</b>
+              </button>
+            </div>
+
+            <div
+              class="modal fade"
+              id="bookModal_five"
+              tabindex="-1"
+              aria-labelledby="bookModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="bookModalLabel5">CONSTANCE</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="lead">
+                      In the near future, advances in medicine and quantum
+                      computing make human cloning a reality. For the wealthy,
+                      cheating death is the ultimate luxury. To anticloning
+                      militants, it’s an abomination against nature. For young
+                      Constance “Con” D’Arcy, who was gifted her own clone by
+                      her late aunt, it’s terrifying. After a routine monthly
+                      upload of her consciousness—stored for that inevitable
+                      transition—something goes wrong. When Con wakes up in the
+                      clinic, it’s eighteen months later. Her recent memories
+                      are missing. Her original, she’s told, is dead. If that’s
+                      true, what does that make her? The secrets of Con’s
+                      disorienting new life are buried deep. So are those of how
+                      and why she died. To uncover the truth, Con is retracing
+                      the last days she can recall, crossing paths with a
+                      detective who’s just as curious. On the run, she needs
+                      someone she can trust. Because only one thing has become
+                      clear: Con is being marked for murder—all over again.
+                    </p>
+                    <a
+                      class="btn btn-primary btn-lg"
+                      href="https://www.amazon.in/Constance-Matthew-FitzSimmons-ebook/dp/B08Q7GGMNG/ref=sr_1_1?crid=EDP468J7EXKV&keywords=constance&qid=1706181987&s=books&sprefix=constanc%2Cstripbooks%2C260&sr=1-1"
+                      role="button"
+                      >BUY ME</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="area6">
+              <img
+                src="./assets/download (3).jpeg"
+                alt="Olive"
+                style="width: 100%"
+              />
+              <button
+                type="button"
+                class="btn1"
+                onclick="popupFunction_six(bookModal_six);"
+              >
+                <b>OLIVE</b>
+              </button>
+            </div>
+
+            <div
+              class="modal fade"
+              id="bookModal_six"
+              tabindex="-1"
+              aria-labelledby="bookModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="bookModalLabel6">CONSTANCE</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="lead">
+                      OLIVE is many things, and it’s ok that she’s still
+                      figuring it all out, navigating her world without a
+                      compass. But life comes with expectations, there are
+                      choices to be made, boxes to tick and – sometimes –
+                      stereotypes to fulfil. And when her best friends’ lives
+                      start to branch away towards marriage and motherhood,
+                      leaving the path they’ve always followed together, Olive
+                      starts to question her choices – because life according to
+                      Olive looks a little bit different. Moving, memorable and
+                      a mirror for every woman at a crossroads, OLIVE has a
+                      little bit of all of us. Told with great warmth and
+                      nostalgia, this is a modern tale about the obstacle course
+                      of adulthood, milestone decisions and the ‘taboo’ about
+                      choosing not to have children.
+                    </p>
+                    <a
+                      class="btn btn-primary btn-lg"
+                      href="https://www.amazon.in/Olive-hotly-anticipated-debut-bestselling-author-ebook/dp/B07YCWZ8X6/ref=sr_1_1?crid=1THU51U13QJLM&keywords=olive+emma+gannon&qid=1706182055&s=books&sprefix=olive+emma+gannon%2Cstripbooks%2C251&sr=1-1"
+                      role="button"
+                      >BUY ME</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="area7">
+              <img
+                src="./assets/7186HDbbHVL._AC_UF1000,1000_QL80_.jpg"
+                alt="Sleepless"
+                style="width: 100%"
+              />
+              <button
+                type="button"
+                class="btn1"
+                onclick="popupFunction_seven(bookModal_seven);"
+              >
+                <b>SLEEPLESS</b>
+              </button>
+            </div>
+
+            <div
+              class="modal fade"
+              id="bookModal_seven"
+              tabindex="-1"
+              aria-labelledby="bookModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="bookModalLabel7">SLEEPLESS</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="lead">
+                      Young, rich and good-looking, Izzy and her friends lead
+                      seemingly perfect lives. But exams are looming and at a
+                      school like Clerkenwell, failure is not an option.
+                      Luckily, Tigs has a solution. A small pill that will make
+                      revision a breeze and help them get the results they need.
+                      Desperate to succeed, the group begin taking the study
+                      drug. It doesn't take long before they realize there are
+                      far worse things than failing a few exams.
+                    </p>
+                    <a
+                      class="btn btn-primary btn-lg"
+                      href="https://www.amazon.in/Sleepless-Red-Eye-Lou-Morgan/dp/1847154557/ref=sr_1_1?crid=F9Y23QRM90D5&keywords=sleepless+lou+morgan&qid=1706182091&s=books&sprefix=sleepless+lou+morgan%2Cstripbooks%2C253&sr=1-1"
+                      role="button"
+                      >BUY ME</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
